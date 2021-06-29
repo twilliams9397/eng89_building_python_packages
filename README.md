@@ -16,3 +16,25 @@ eng89_building_python_packages
 program.py
 setup.py
 ```
+
+- `fizzbuzz.py` code was copied from previous task and updated to be a function
+- `program.py` file code:
+```python
+from app.fizzbuzz import Fizzbuzz
+
+one_to_100 = Fizzbuzz(100)
+print(one_to_100.fizzbuzz_list)
+
+```
+- `setup.py` file code:
+```python
+from setuptools import setup
+
+# add some information about package
+setup(name="app") # this is required, lines below are optional
+version = "1.0"
+description = "Python app"
+author = "Tom at Sparta Global"
+author_email = "twilliams@spartaglobal.com"
+url = "http://spartaglobal.com"
+```
